@@ -19,32 +19,61 @@ h6 {
 }
 
 body {
+  
   margin: 0;
   width: 100%;
   height: 100%;
   outline: none;
+  font-family: "M PLUS 1p", sans-serif;
+  
+.primer { 
+  position: fixed;
+}}
+
+
+.primer.active { 
+  overflow-y: hidden;
+  position: absolute;
+} 
+
+a , button { 
+  cursor: pointer;
 }
 
-a { 
-  cursor: pointer;
+.none { 
+  display: none;
 }
 
 .container {
   margin: auto;
   width: 320px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
   overflow: hidden;
+  @media (min-width: 544px) {
+    width: 544px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
 
   @media (min-width: 768px) {
     width: 768px;
-    padding-right: 30px;
     padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+
+  @media (min-width: 992px) {
+    width: 992px;
+    
   }
 
   @media (min-width: 1200px) {
-    width: 1230px;
-    
+    width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -78,13 +107,13 @@ a {
   }
 
   @media (min-width: 1200px) {
-    font-size: 90px;
+    font-size: 82px;
     font-weight: 800;
   }
 }
 
 .title-medium {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 400;
 
   @media (min-width: 768px) {
@@ -184,7 +213,7 @@ a {
 }
 
 .intouch-icons { 
-  margin-right: 30px;
+  margin-right: 32px;
 
   @media (min-width: 768px) { 
     margin-right: 34px;
@@ -239,4 +268,26 @@ a {
     transform: scale(1.2);
     color: #1a9cdd;
   }
+}
+
+.mailme {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+  transition: ease 0.5s;
+
+  a { 
+      color: #000000;
+
+      &:hover { 
+          color: #039be5;
+        }
+    
+      &:active {  
+          color: #ea736d;
+        }
+  }
+
+  
 }

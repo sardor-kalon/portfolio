@@ -10,10 +10,11 @@
 
 	<title>My Portfolio</title>
 </head>
-<body>
-	<div id="overlay"></div>	
+<body class="primer">
+	<div id="overlay"></div>
+		
 				<!-- Header -->
-	<div class="header">
+	<div class="header none">
 
 				<!-- Header Navigation -->
 		<div class="header-nav">
@@ -40,30 +41,30 @@
 				<!-- //Header Navigation -->
 
 				<!-- Header-Nav-Dropdown -->
-			<div class="header-nav-dropdown">
+		<div class="header-nav-dropdown">
 
 					<div class="logo">
 						<a href="index.html">СК</a>
 					</div>
 		
-					<nav class="header-menu-list">
+					<nav class="toggle-menu-list">
 						<a href="#">Главная</a>
 						<a href="#">Работы</a>
 						<a href="#">Контакты</a>
 					</nav>
 		
-					<div class="icons-row">
-						<a href="#" class="intouch-icons"><i class="fab fa-github"></i></a>
-						<a href="#" class="intouch-icons"><i class="fab fa-telegram"></i></a>
-						<a href="#" class="intouch-icons"><i class="fab fa-skype"></i></a>
-						<a href="#" class="intouch-icons"><i class="fab fa-facebook"></i></a>
+					<div class="icons-row-toggle">
+						<a href="#" class="toggle-icons"><i class="fab fa-github"></i></a>
+						<a href="#" class="toggle-icons"><i class="fab fa-telegram"></i></a>
+						<a href="#" class="toggle-icons"><i class="fab fa-skype"></i></a>
+						<a href="#" class="toggle-icons"><i class="fab fa-facebook"></i></a>
 					</div>
 		
 					<div class="mailme-toggle">
 						<a href="#"></i>kalonsr@gmail.com</a>
 					</div>
 		
-			</div>
+		</div>
 				<!-- //Header-Nav-Dropdown -->
 
 				<!-- Header Introduce -->
@@ -110,7 +111,6 @@
 			</div>
 
 		</div>
-
 				<!-- //Header Introduce -->
 
 				<!-- container-bg -->
@@ -170,7 +170,101 @@
 		
 	</div>
 				<!-- Header -->
+
+	<section class="portfolio  none" id="portfolio">
+
+		<div class="container">
+
+			<div class="portfolio-title"><span class="bottom-line">Портфолио</span></div>
+						<!-- Portfolio-Cards -->
+			<div class="portfolio-cards">
+				<div class="portfolio-cards-toggle">
+					<button class="portfolio-cards-toggle__item control-active" data-filter="all">Все работы</button>
+					<button class="portfolio-cards-toggle__item" data-filter=".boots">Bootstrap</button>
+					<button class="portfolio-cards-toggle__item" data-filter="..wp">WordPress</button>
+					<button class="portfolio-cards-toggle__item" data-filter=".frontend">Frontend</button>
+				</div>
+			</div>
+						<!-- //Portfolio-Cards -->
+						<!-- Portfolio-Cards__Wrapper -->
+			<div class="portfolio-cards__wrapper">
+
+				<div class="portfolio-projects">
+
+					<div class="portfolio-projects__item">
+
+						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/travel.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						
+						<div class="portfolio-cards__desc">
+							<a class="portfolio-cards__title--big" href="#!">Верстка &Prime;Форест тревел&Prime;</a>
+							<p class="portfolio-cards__subtitle--big">Верстка многостраничного сайта.</p>
+						</div>
+
+					</div>
+
+					<div class="portfolio-projects__item">
+
+						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/dream.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						
+						<div class="portfolio-cards__desc">
+							<a class="portfolio-cards__title--big" href="#!">Сайт для коворкинга &Prime;Мечта&Prime;</a>
+							<p class="portfolio-cards__subtitle--big">Верстка лендинга. </p>
+						</div>
+
+					</div>	
+
+				</div>
+
+				<div class="portfolio-projects">
+
+					<div class="portfolio-projects__item">
+
+						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/coffe.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						
+						<div class="portfolio-cards__desc">
+							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир Авто&Prime;</a>
+							<p class="portfolio-cards__subtitle">Верстка многостраничного сайта.</p>
+						</div>
+
+					</div>
+
+					<div class="portfolio-projects__item">
+
+						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/phone.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						
+						<div class="portfolio-cards__desc">
+							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир Авто&Prime;</a>
+							<p class="portfolio-cards__subtitle">Верстка лендинга. </p>
+						</div>
+
+					</div>
+					
+					<div class="portfolio-projects__item">
+
+						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/autoworld.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						
+						<div class="portfolio-cards__desc">
+							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир Авто&Prime;</a>
+							<p class="portfolio-cards__subtitle">Верстка многостраничного сайта.</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+						<!-- //Portfolio-Cards__Wrapper -->
+		</div>
+
+	</section>
+
+
+
+
+
+
 	<script src="./libs/jquery/jquery-3.5.0.min.js"></script>
+	<script src="./libs/mixitup/mixitup.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 </html>
