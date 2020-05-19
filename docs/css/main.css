@@ -1116,7 +1116,7 @@ button {
 }
 .portfolio {
   background-color: #f4f8f9;
-  padding-top: 35px;
+  padding-top: 47px;
   padding-bottom: 70px;
 }
 @media (min-width: 768px) {
@@ -1127,26 +1127,26 @@ button {
 }
 @media (min-width: 1200px) {
   .portfolio {
-    padding-top: 103px;
+    padding-top: 95px;
     padding-bottom: 125px;
   }
 }
 .portfolio-title {
   font-size: 42px;
   font-weight: 900;
-  margin-bottom: 25px;
+  margin-bottom: 39px;
 }
 @media (min-width: 768px) {
   .portfolio-title {
-    margin-bottom: 39px;
+    margin-bottom: 45px;
     font-size: 52px;
-    font-weight: 900;
+    font-weight: 700;
   }
 }
 @media (min-width: 1200px) {
   .portfolio-title {
     margin-bottom: 50px;
-    font-size: 64px;
+    font-size: 59px;
     font-weight: 900;
   }
 }
@@ -1164,25 +1164,23 @@ button {
   bottom: 15%;
   left: 0;
 }
-.portfolio-cards {
-  margin-bottom: 30px;
+.portfolio-cards-toggle {
+  display: none;
 }
 @media (min-width: 768px) {
-  .portfolio-cards {
+  .portfolio-cards-toggle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-bottom: 47px;
   }
 }
 @media (min-width: 1200px) {
-  .portfolio-cards {
-    margin-bottom: 45px;
+  .portfolio-cards-toggle {
+    margin-bottom: 50px;
   }
-}
-.portfolio-cards-toggle {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .portfolio-cards-toggle__item:hover {
   color: #000;
@@ -1208,7 +1206,7 @@ button {
 }
 @media (min-width: 1200px) {
   .portfolio-cards-toggle__item {
-    margin-right: 50px;
+    margin-right: 57px;
     font-size: 28px;
     font-weight: 900;
   }
@@ -1219,39 +1217,92 @@ button {
 .portfolio-cards-toggle__item:focus {
   outline: none;
 }
-.portfolio-projects {
+#portfolio-projects {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 23px;
+}
+@media (min-width: 544px) {
+  #portfolio-projects {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media (min-width: 768px) {
-  .portfolio-projects {
-    margin-bottom: 50px;
+  #portfolio-projects {
+    margin-bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+@media (min-width: 992px) {
+  #portfolio-projects {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (min-width: 1200px) {
-  .portfolio-projects {
+  #portfolio-projects {
     margin-bottom: 62px;
   }
 }
 .portfolio-projects__item {
   overflow: hidden;
+  margin-bottom: 55px;
+  max-width: 290px;
 }
+.portfolio-projects__item:nth-child(2),
 .portfolio-projects__item:last-child {
   margin-right: 0;
 }
 @media (min-width: 768px) {
   .portfolio-projects__item {
     margin-right: 30px;
-    width: 50%;
+    margin-bottom: 50px;
     max-width: 339px;
+  }
+  .portfolio-projects__item:nth-child(even) {
+    margin-right: 0;
   }
 }
 @media (min-width: 1200px) {
   .portfolio-projects__item {
+    margin-right: 30px;
+    margin-bottom: 66px;
+    max-width: 360px;
+  }
+  .portfolio-projects__item:nth-last-child(2) {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-projects__item--big {
+    max-width: 555px;
+    max-height: 100%;
     margin-right: 30px;
   }
 }
@@ -1289,6 +1340,19 @@ button {
   -o-transition: ease 0.4s;
   -moz-transition: ease 0.4s;
   transition: ease 0.4s;
+}
+.cards-item-img img {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden {
+    display: block;
+  }
 }
 .portfolio-cards_item .view-project {
   position: absolute;
@@ -1329,6 +1393,11 @@ button {
 .portfolio-cards__desc {
   margin-top: 15px;
 }
+@media (min-width: 768px) {
+  .portfolio-cards__desc {
+    margin-top: 25px;
+  }
+}
 @media (min-width: 1200px) {
   .portfolio-cards__desc {
     margin-top: 15px;
@@ -1336,7 +1405,7 @@ button {
 }
 .portfolio-cards__title--big {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
   color: #000;
 }
@@ -1347,18 +1416,18 @@ button {
 @media (min-width: 768px) {
   .portfolio-cards__title--big {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 700;
   }
 }
 @media (min-width: 1200px) {
   .portfolio-cards__title--big {
-    font-size: 32px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: 700;
   }
 }
 .portfolio-cards__title {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #000;
 }
@@ -1378,29 +1447,53 @@ button {
     font-weight: 700;
   }
 }
-.portfolio-cards__subtitle--big {
-  font-size: 18px;
+.portfolio-cards__subtitle {
+  font-size: 16px;
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  .portfolio-cards__subtitle--big {
+  .portfolio-cards__subtitle {
     font-size: 20px;
     font-weight: 400;
   }
 }
 @media (min-width: 1200px) {
-  .portfolio-cards__subtitle--big {
+  .portfolio-cards__subtitle {
     font-size: 22px;
-    ont-weight: 400;
+    font-weight: 400;
   }
 }
-.portfolio-cards__subtitle--big {
-  font-size: 18px;
-  font-weight: 400;
+.show-cards {
+  margin-top: -30px;
+}
+@media (min-width: 768px) {
+  .show-cards {
+    margin-top: -10px;
+  }
 }
 @media (min-width: 1200px) {
-  .portfolio-cards__subtitle--big {
-    font-size: 22px;
+  .show-cards {
+    display: none;
+  }
+}
+.show-cards__link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  translate: ease 0.5s;
+}
+.show-cards__link:hover {
+  color: #039be5;
+  border-bottom: 2px solid #039be5;
+}
+.show-cards__link:focus {
+  color: #ed574f;
+  border-bottom: 2px solid #ed574f;
+  outline: none;
+}
+@media (min-width: 1200px) {
+  .show-cards__link {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

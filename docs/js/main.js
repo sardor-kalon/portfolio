@@ -24,3 +24,34 @@ $(document).ready(function () {
     })
 
 })
+
+$(document).ready(function () {
+
+    let containerEl = document.querySelector("#portfolio-projects");
+
+        let mixer = mixitup(containerEl, {
+            classNames: {
+                block:""
+            }
+        });
+
+    const filterToggles = document.querySelectorAll(".portfolio-cards-toggle__item");
+    const portfolioBigCards = document.querySelectorAll(".portfolio-projects__item");
+
+    for (let i = 0; i < filterToggles.length; i++) {
+        filterToggles[i].addEventListener("click", function () {
+            if (i == 0) {
+                for (let j = 0; j<2; j++) {
+                portfolioBigCards[j].classList.add("portfolio-projects__item--big")
+                }
+            } else {
+                for (let j = 0; j<2; j++) {
+                portfolioBigCards[j].classList.remove("portfolio-projects__item--big") 
+                }
+            }
+        });
+    }
+
+
+
+})

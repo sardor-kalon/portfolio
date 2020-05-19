@@ -171,92 +171,104 @@
 	</div>
 				<!-- Header -->
 
-	<section class="portfolio  none" id="portfolio">
+	<section class="portfolio " id="portfolio">
 
 		<div class="container">
 
 			<div class="portfolio-title"><span class="bottom-line">Портфолио</span></div>
 						<!-- Portfolio-Cards -->
-			<div class="portfolio-cards">
-				<div class="portfolio-cards-toggle">
-					<button class="portfolio-cards-toggle__item control-active" data-filter="all">Все работы</button>
-					<button class="portfolio-cards-toggle__item" data-filter=".boots">Bootstrap</button>
-					<button class="portfolio-cards-toggle__item" data-filter="..wp">WordPress</button>
-					<button class="portfolio-cards-toggle__item" data-filter=".frontend">Frontend</button>
-				</div>
+			
+			<div class="portfolio-cards-toggle">
+				<button class="portfolio-cards-toggle__item control-active" data-filter="all">Все работы</button>
+				<button class="portfolio-cards-toggle__item" data-filter=".boots">Bootstrap</button>
+				<button class="portfolio-cards-toggle__item" data-filter=".wp">WordPress</button>
+				<button class="portfolio-cards-toggle__item" data-filter=".frontend">Frontend</button>
 			</div>
+			
 						<!-- //Portfolio-Cards -->
 						<!-- Portfolio-Cards__Wrapper -->
+
 			<div class="portfolio-cards__wrapper">
 
-				<div class="portfolio-projects">
+						<!-- Portfolio-Projects -->
+				<div id="portfolio-projects">
 
-					<div class="portfolio-projects__item">
+					<div class="portfolio-projects__item portfolio-projects__item--big  mix boots">
 
-						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/travel.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/travel.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
 						
-						<div class="portfolio-cards__desc">
-							<a class="portfolio-cards__title--big" href="#!">Верстка &Prime;Форест тревел&Prime;</a>
-							<p class="portfolio-cards__subtitle--big">Верстка многостраничного сайта.</p>
-						</div>
+							<div class="portfolio-cards__desc">
+								<a class="portfolio-cards__title--big" href="#!">Верстка &Prime;	Форест тревел&Prime;</a>
+								<p class="portfolio-cards__subtitle">Верстка 	многостраничного сайта.</p>
+							</div>
+						</a>
 
 					</div>
 
-					<div class="portfolio-projects__item">
+					<div class="portfolio-projects__item portfolio-projects__item--big  mix wp">
 
-						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/dream.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/dream.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
 						
-						<div class="portfolio-cards__desc">
-							<a class="portfolio-cards__title--big" href="#!">Сайт для коворкинга &Prime;Мечта&Prime;</a>
-							<p class="portfolio-cards__subtitle--big">Верстка лендинга. </p>
-						</div>
+							<div class="portfolio-cards__desc">
+								<a class="portfolio-cards__title--big" href="#!">Сайт для &Prime;Юнит&Prime;</a>
+								<p class="portfolio-cards__subtitle">Верстка лендинга. </p>
+							</div>
+						</a>
 
-					</div>	
+					</div>
+					
+					<div class="portfolio-projects__item mix frontend">
 
-				</div>
-
-				<div class="portfolio-projects">
-
-					<div class="portfolio-projects__item">
-
-						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/coffe.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/coffe.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
 						
 						<div class="portfolio-cards__desc">
 							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир Авто&Prime;</a>
 							<p class="portfolio-cards__subtitle">Верстка многостраничного сайта.</p>
 						</div>
+					</a>
 
 					</div>
 
-					<div class="portfolio-projects__item">
+					<div class="portfolio-projects__item mix wp boots">
 
-						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/phone.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/phone.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
 						
 						<div class="portfolio-cards__desc">
 							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир Авто&Prime;</a>
 							<p class="portfolio-cards__subtitle">Верстка лендинга. </p>
 						</div>
+						</a>
 
 					</div>
 					
-					<div class="portfolio-projects__item">
+					<div class="portfolio-projects__item frontend hidden">
 
-						<a class="portfolio-cards_item" href="#"><img src="./img/portfolio/autoworld.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></a>
-						
-						<div class="portfolio-cards__desc">
-							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир Авто&Prime;</a>
-							<p class="portfolio-cards__subtitle">Верстка многостраничного сайта.</p>
-						</div>
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/autoworld.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
+							<div class="portfolio-cards__desc hidden">
+								<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир 	Авто&Prime;</a>
+								<p class="portfolio-cards__subtitle">Верстка многостраничного 	сайта.</p>
+							</div>
+						</a>
 
 					</div>
 
 				</div>
-
+						<!-- //Portfolio-Projects -->
 			</div>
 						<!-- //Portfolio-Cards__Wrapper -->
+			<div class="show-cards">
+				<a href="#" class="show-cards__link">Смотреть все работы</a>
+			</div>
 		</div>
 
 	</section>
+						<!-- //Portfolio-Cards__Wrapper -->
+			
 
 
 
