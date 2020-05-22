@@ -251,6 +251,7 @@
 
 .cards-item-img img {
   max-width: 100%;
+  display: block;
 }
 
 .hidden {
@@ -321,7 +322,7 @@
 
   &:hover {
     color: #ed574f;
-    text-decoration: underline;
+    border-bottom: solid 2px #ed574f;
   }
 
   @media (min-width: 544px) {
@@ -394,12 +395,9 @@
     margin-top: -30px;
 
     @media (min-width: 768px) { 
-        margin-top: -10px; 
+      display: none; 
     }
 
-  @media (min-width: 1200px) {
-    display: none;
-  }
 }
 
 .show-cards__link {
@@ -419,7 +417,7 @@
     outline: none;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
