@@ -13,7 +13,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, ul {
   margin: 0;
   padding: 0;
 }
@@ -291,3 +291,21 @@ a , button {
 
   
 }
+
+.bottom-line {
+  position: relative;
+  z-index: 1;
+ }
+
+.bottom-line:after {
+    content: "";
+    display: block;
+    position: absolute;
+    padding-left: -5px;
+    padding-right: -5px;
+    z-index: -1;
+    width: 100%;
+    border-bottom: 12px solid yellow;
+    bottom: 15%;
+    left: 0;
+  }
