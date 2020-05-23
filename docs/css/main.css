@@ -888,7 +888,27 @@ button {
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
+}
+.header-icons .fab {
+  font-size: 30px;
+}
+.fa-telegram {
+  color: #039be5;
+}
+.fa-telegram:hover {
+  color: #23aff5;
+}
+.fa-skype {
+  color: #2962ff;
+}
+.fa-skype:hover {
+  color: #396bf5;
 }
 .fa-linkedin-in {
   font-size: 30px;
@@ -2400,5 +2420,174 @@ footer {
 .content span a:active {
   color: #4651e0;
   outline: hidden;
+}
+.portfolio-page {
+  position: relative;
+  background-color: #f4f8f9;
+  padding-top: 75px;
+}
+@media (min-width: 768px) {
+  .portfolio-page {
+    padding-top: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-page {
+    padding-top: 75px;
+  }
+}
+.footer-contacts {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 40px;
+}
+.footer-contacts img {
+  position: absolute;
+  max-width: 100%;
+  padding-top: 140px;
+}
+@media (min-width: 1200px) {
+  .footer-contacts img {
+    padding-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .footer-contacts {
+    padding-top: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-contacts {
+    padding-top: 70px;
+  }
+}
+.footer-contacts__wrapper {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.for-contact {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+@media (min-width: 768px) {
+  .for-contact {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .for-contact {
+    font-size: 38px;
+  }
+}
+.for-contact-me {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 290px;
+}
+.for-contact-me span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333333;
+}
+@media (min-width: 768px) {
+  .for-contact-me span {
+    font-size: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .for-contact-me span {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) {
+  .for-contact-me {
+    margin-bottom: 25px;
+    width: 470px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .for-contact-me {
+    margin-bottom: 35px;
+  }
+}
+.contact-mail {
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  transition: ease 0.5s;
+  color: #1a8fc9;
+  border-bottom: solid 2px #1a8fc9;
+}
+.contact-mail:hover {
+  color: #039be5;
+  border-bottom: solid 2px #039be5;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  transition: ease 0.3s;
+  font-weight: 600;
+}
+.contact-mail:active {
+  color: #ea736d;
+  border-bottom: solid 2px #ea736d;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+@media (min-width: 768px) {
+  .contact-mail {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
