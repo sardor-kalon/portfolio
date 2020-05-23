@@ -30,14 +30,27 @@ body {
   position: fixed;
 }}
 
+body {  
+  
+}
+
 
 .primer.active { 
   overflow-y: hidden;
   position: absolute;
 } 
 
+a,
+a:hover { 
+  text-decoration: none;
+}
+
 a , button { 
   cursor: pointer;
+}
+
+:hover, :focus, :active { 
+  transition: ease 0.5s;
 }
 
 .none { 
@@ -81,10 +94,8 @@ a , button {
   font-family: "M PLUS 1p", sans-serif;
   font-weight: 800;
   font-size: 38px;
-  // text-transform: uppercase;
   
-
-    span {
+  span {
       position: relative;
       z-index: 1;
     }
@@ -274,7 +285,6 @@ a , button {
   text-align: center;
   font-size: 25px;
   font-weight: 400;
-  text-decoration: underline;
   transition: ease 0.5s;
 
   a { 
@@ -282,10 +292,15 @@ a , button {
 
       &:hover { 
           color: #039be5;
+          border-bottom: solid 2px #039be5;
+          transition: ease 0.3s;
+          font-weight: 600;
         }
     
       &:active {  
           color: #ea736d;
+          border-bottom: solid 2px #ea736d;
+          transition: ease 0.3s;
         }
   }
 

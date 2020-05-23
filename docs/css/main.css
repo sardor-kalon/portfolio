@@ -32,8 +32,20 @@ body .primer {
   position: absolute;
 }
 a,
+a:hover {
+  text-decoration: none;
+}
+a,
 button {
   cursor: pointer;
+}
+:hover,
+:focus,
+:active {
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 .none {
   display: none;
@@ -259,7 +271,6 @@ button {
   text-align: center;
   font-size: 25px;
   font-weight: 400;
-  text-decoration: underline;
   -webkit-transition: ease 0.5s;
   -o-transition: ease 0.5s;
   -moz-transition: ease 0.5s;
@@ -270,9 +281,20 @@ button {
 }
 .mailme a:hover {
   color: #039be5;
+  border-bottom: solid 2px #039be5;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  transition: ease 0.3s;
+  font-weight: 600;
 }
 .mailme a:active {
   color: #ea736d;
+  border-bottom: solid 2px #ea736d;
+  -webkit-transition: ease 0.3s;
+  -o-transition: ease 0.3s;
+  -moz-transition: ease 0.3s;
+  transition: ease 0.3s;
 }
 .bottom-line {
   position: relative;
@@ -525,36 +547,16 @@ button {
   .container-bg {
     margin-bottom: 0;
     margin-top: -136px;
-    margin-left: -126px;
-    max-width: 1600px;
+    max-width: 100%;
   }
 }
 .container-bg img {
   display: block;
   height: auto;
-  max-width: 320px;
+  width: 100%;
+  max-width: 1600px;
 }
-@media (min-width: 544px) {
-  .container-bg img {
-    max-width: 544px;
-  }
-}
-@media (min-width: 768px) {
-  .container-bg img {
-    max-width: 768px;
-  }
-}
-@media (min-width: 992px) {
-  .container-bg img {
-    max-width: 992px;
-  }
-}
-@media (min-width: 1200px) {
-  .container-bg img {
-    max-width: 1600px;
-  }
-}
-.header-bottom__wrapper {
+#header-bottom__wrapper {
   margin-bottom: 75px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -577,7 +579,7 @@ button {
   z-index: 2;
 }
 @media (min-width: 768px) {
-  .header-bottom__wrapper {
+  #header-bottom__wrapper {
     margin-bottom: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -594,7 +596,7 @@ button {
   }
 }
 @media (min-width: 1200px) {
-  .header-bottom__wrapper {
+  #header-bottom__wrapper {
     margin-top: -20px;
   }
 }
@@ -684,10 +686,11 @@ button {
 .mailme {
   font-size: 25px;
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .mailme a {
   color: #000000;
+  border-bottom: solid 1px #000000;
 }
 .header-nav {
   position: relative;
@@ -765,6 +768,10 @@ button {
   font-weight: 800;
   z-index: 1;
   max-width: 70px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
 }
 .logo a {
   text-decoration: none;
@@ -775,7 +782,6 @@ button {
   display: block;
   position: absolute;
   z-index: -1;
-  /* width: 50px; */
   border-bottom: 10px solid #fbdc4d;
   bottom: 7px;
   left: -5px;
@@ -783,11 +789,15 @@ button {
   max-width: 75px;
 }
 .logo:hover {
-  -webkit-transform: scale(1.2);
-     -moz-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-       -o-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
 }
 .header-menu {
   display: none;
@@ -1120,16 +1130,18 @@ button {
   text-align: center;
   font-size: 25px;
   font-weight: 400;
-  text-decoration: underline;
+  border-bottom: solid 1px;
 }
 .mailme-toggle a {
   color: #000;
 }
 .mailme-toggle a:hover {
   color: #039be5;
+  border-bottom: solid 1px #039be5;
 }
 .mailme-toggle a:active {
   color: #ea736d;
+  border-bottom: solid 1px #ea736d;
 }
 .portfolio {
   background-color: #f4f8f9;
@@ -1574,7 +1586,7 @@ button {
   padding-left: -5px;
   padding-right: -5px;
   width: 100%;
-  border-bottom: 5px solid yellow;
+  border-bottom: 5px solid #fbdc4d;
   bottom: 10%;
   left: 0;
   -webkit-transition: ease 0.5s;
@@ -1877,20 +1889,16 @@ button {
   position: relative;
   z-index: 1;
   padding-top: 48px;
-  padding-bottom: 101px;
   background-color: rgba(112, 175, 246, 0.1);
-  max-width: 1600px;
 }
 @media (min-width: 768px) {
   #contacts {
     padding-top: 68px;
-    padding-bottom: 86px;
   }
 }
 @media (min-width: 1200px) {
   #contacts {
     padding-top: 153px;
-    padding-bottom: 150px;
   }
 }
 .contacts-image {
@@ -1942,6 +1950,7 @@ button {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 101px;
 }
 @media (min-width: 544px) {
   .contacts-wrapper {
@@ -1962,11 +1971,13 @@ button {
        -moz-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-bottom: 86px;
   }
 }
 @media (min-width: 1200px) {
   .contacts-wrapper {
     padding-right: 20px;
+    padding-bottom: 150px;
   }
 }
 .contacts-content {
@@ -2041,12 +2052,12 @@ button {
 }
 @media (min-width: 768px) {
   .list-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1200px) {
   .list-item {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2128,6 +2139,7 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 50px;
+  padding-bottom: 40px;
   width: 290px;
   -webkit-box-shadow: 0 28px 40px #c2dbeb;
      -moz-box-shadow: 0 28px 40px #c2dbeb;
@@ -2231,8 +2243,8 @@ button {
   color: #000;
 }
 .contacts-form__btn button {
-  width: 200px;
-  height: 64px;
+  width: 260px;
+  height: 54px;
   -webkit-border-radius: 31px;
      -moz-border-radius: 31px;
           border-radius: 31px;
@@ -2295,7 +2307,7 @@ button {
 }
 @media (min-width: 1200px) {
   .fake-placeholder {
-    top: 16px;
+    top: 10px;
   }
 }
 .fake-placeholder.active {

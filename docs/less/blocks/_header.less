@@ -196,37 +196,19 @@
   @media (min-width: 1200px) {
     margin-bottom: 0; 
     margin-top: -136px;
-    margin-left: -126px;
-    max-width: 1600px;
+    max-width: 100%;
      
   }
 
   img { 
-    // max-width: 100%;
     display: block;
     height: auto;
-    max-width: 320px;
-
-    @media (min-width: 544px) { 
-      max-width: 544px;
-    }
-
-
-    @media (min-width: 768px) { 
-      max-width: 768px;
-    }
-
-    @media (min-width: 992px) { 
-      max-width: 992px;
-    }
-
-    @media (min-width: 1200px) { 
-      max-width: 1600px;
-    }
+    width: 100%;
+    max-width: 1600px;
   }
 }
 
-.header-bottom__wrapper { 
+#header-bottom__wrapper { 
     margin-bottom: 75px;  
     display: flex;
     flex-direction: column;
@@ -324,9 +306,10 @@
 .mailme {
     font-size: 25px;
     font-weight: 400;
-    text-decoration: underline;
+    text-decoration: none;
 
     a { 
         color: #000000;
+        border-bottom: solid 1px #000000;
     }
 }
