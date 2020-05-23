@@ -1905,19 +1905,19 @@ button {
     line-height: 1.2;
   }
 }
-#contacts {
+.contacts {
   position: relative;
   z-index: 1;
   padding-top: 48px;
   background-color: rgba(112, 175, 246, 0.1);
 }
 @media (min-width: 768px) {
-  #contacts {
+  .contacts {
     padding-top: 68px;
   }
 }
 @media (min-width: 1200px) {
-  #contacts {
+  .contacts {
     padding-top: 153px;
   }
 }
@@ -2349,6 +2349,20 @@ button {
 @media (min-width: 1200px) {
   .fake-placeholder.active {
     top: -25px;
+  }
+}
+.contacts-page {
+  padding-top: 20px;
+  background-color: rgba(112, 175, 246, 0.1);
+}
+@media (min-width: 1200px) {
+  .contacts-page {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-page {
+    padding-top: 60px;
   }
 }
 footer {
