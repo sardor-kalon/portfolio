@@ -290,7 +290,7 @@ button {
   bottom: 15%;
   left: 0;
 }
-.header {
+#header {
   margin: auto;
   position: relative;
   padding-top: 15px;
@@ -302,19 +302,19 @@ button {
   max-width: 320px;
 }
 @media (min-width: 544px) {
-  .header {
+  #header {
     max-width: 544px;
   }
 }
 @media (min-width: 768px) {
-  .header {
+  #header {
     max-width: 768px;
     padding-top: 20px;
     padding-bottom: 85px;
   }
 }
 @media (min-width: 1200px) {
-  .header {
+  #header {
     padding-top: 60px;
     padding-bottom: 240px;
     background-image: url(../img/lines/Slice_4.jpg);
@@ -1509,14 +1509,14 @@ button {
     display: none;
   }
 }
-.timeline {
+#timeline {
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 0;
   padding-right: 0;
 }
 @media (min-width: 768px) {
-  .timeline {
+  #timeline {
     padding-top: 91px;
     padding-bottom: 89px;
     padding-left: 0;
@@ -1524,7 +1524,7 @@ button {
   }
 }
 @media (min-width: 1200px) {
-  .timeline {
+  #timeline {
     padding-top: 150px;
     padding-bottom: 150px;
   }

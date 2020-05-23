@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,500,700,800,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/Awesome/css/all.css">
+    
+    <title>Portfolio</title>
+</head>
+<body>
+
+    				<!-- Header Navigation -->
+	<div class="header-nav">
+
+			<div class="logo">
+				<a href="index.html">СК</a>
+			</div>
+
+			<nav class="header-menu">
+				<a class="menu-item" href="#">Главная</a>
+				<a class="menu-item" href="#">Работы</a>
+				<a class="menu-item" href="#">Контакты</a>
+			</nav>
+
+			<nav class="header-icons">
+				<a href=""><i class="fab fa-linkedin-in"></i></a>
+				<a href=""><i class="fab fa-github"></i></a>
+				<a href=""><i class="fab fa-vk"></i></a>
+			</nav>
+
+			<div class="toggle-menu"><span></span></div>
+
+	</div>
+				<!-- //Header Navigation -->
+
+				<!-- Header-Nav-Dropdown -->
+	<div class="header-nav-dropdown">
+
+					<div class="logo">
+						<a href="index.html">СК</a>
+					</div>
+		
+					<nav class="toggle-menu-list">
+						<a href="#">Главная</a>
+						<a href="#">Работы</a>
+						<a href="#">Контакты</a>
+					</nav>
+		
+					<div class="icons-row-toggle">
+						<a href="#" class="toggle-icons"><i class="fab fa-github"></i></a>
+						<a href="#" class="toggle-icons"><i class="fab fa-telegram"></i></a>
+						<a href="#" class="toggle-icons"><i class="fab fa-skype"></i></a>
+						<a href="#" class="toggle-icons"><i class="fab fa-facebook"></i></a>
+					</div>
+		
+					<div class="mailme-toggle">
+						<a href="#">kalonsr@gmail.com</a>
+					</div>
+		
+	</div>
+                <!-- //Header-Nav-Dropdown -->
+                
+        <!-- Portfolio -->
+	<section class="portfolio">
+
+		<div class="container">
+
+			<div class="portfolio-title"><span class="bottom-line">Портфолио</span></div>
+						<!-- Portfolio-Cards -->
+			
+			<div class="portfolio-cards-toggle">
+				<button class="portfolio-cards-toggle__item control-active" data-filter="all">Все работы</button>
+				<button class="portfolio-cards-toggle__item" data-filter=".boots">Bootstrap</button>
+				<button class="portfolio-cards-toggle__item" data-filter=".wp">WordPress</button>
+				<button class="portfolio-cards-toggle__item" data-filter=".frontend">Frontend</button>
+			</div>
+			
+						<!-- //Portfolio-Cards -->
+						<!-- Portfolio-Cards__Wrapper -->
+
+			<div class="portfolio-cards__wrapper">
+
+						<!-- Portfolio-Projects -->
+				<div id="portfolio-projects">
+
+					<div class="portfolio-projects__item portfolio-projects__item--big  mix boots">
+
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/forest.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
+						
+							<div class="portfolio-cards__desc">
+								<a class="portfolio-cards__title--big" href="#">Верстка &Prime;Форест тревел&Prime;</a>
+								<p class="portfolio-cards__subtitle">Верстка 	многостраничного сайта.</p>
+							</div>
+						</a>
+
+					</div>
+
+					<div class="portfolio-projects__item portfolio-projects__item--big  mix wp">
+
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/unit.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
+						
+							<div class="portfolio-cards__desc">
+								<a class="portfolio-cards__title--big" href="#!">Сайт для &Prime;Юнит&Prime;</a>
+								<p class="portfolio-cards__subtitle">Верстка лендинга. </p>
+							</div>
+						</a>
+
+					</div>
+					
+					<div class="portfolio-projects__item mix frontend">
+
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/portfolio.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
+						
+						<div class="portfolio-cards__desc">
+							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Портфолио&Prime;</a>
+							<p class="portfolio-cards__subtitle">Верстка Лендинга для портфолио.</p>
+						</div>
+					</a>
+
+					</div>
+
+					<div class="portfolio-projects__item mix wp boots">
+
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/moto.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
+						
+						<div class="portfolio-cards__desc">
+							<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир Авто&Prime;</a>
+							<p class="portfolio-cards__subtitle">Верстка карточки с товаром. </p>
+						</div>
+						</a>
+
+					</div>
+					
+					<div class="portfolio-projects__item frontend hidden">
+
+						<a class="portfolio-cards_item" href="#">
+							<div class="cards-item-img"><img src="./img/portfolio/cardbook.jpg" alt="Forest Travel"><button class="view-project">Смотреть проект</button></div>
+							<div class="portfolio-cards__desc hidden">
+								<a class="portfolio-cards__title" href="#!">Верстка &Prime;Мир 	Книг&Prime;</a>
+								<p class="portfolio-cards__subtitle">Верстка карточки с товаром.</p>
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+						<!-- //Portfolio-Projects -->
+			</div>
+						<!-- //Portfolio-Cards__Wrapper -->
+			<div class="show-cards">
+				<a href="#" class="show-cards__link">Смотреть все работы</a>
+			</div>
+		</div>
+
+	</section>
+				<!-- //Portfolio -->
+
+
+
+
+
+   <script src="./libs/jquery/jquery-3.5.0.min.js"></script>
+   <script src="./libs/mixitup/mixitup.min.js"></script>
+   <script src="./js/main.js"></script> 
+</body>
+</html>
