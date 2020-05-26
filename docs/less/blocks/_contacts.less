@@ -13,6 +13,10 @@
     @media (min-width: 1200px) { 
         padding-top: 153px;
         
+        background-image: url(../img/lines/3.jpg);
+        background-repeat: repeat;
+        background-size: auto;
+        background-position: center;
     }
 }
 
@@ -28,21 +32,19 @@
     }
 }
 
-.contacts-title { 
+.section-title.contact { 
     margin-bottom: 39px;  
-    font-size: 42px;
-    font-weight: 700;
     color: #000;
     text-align: center;
 
     @media (min-width: 768px) {
         margin-bottom: 60px; 
-        font-size: 52px;
+        
     }
 
     @media (min-width: 1200px) { 
         margin-bottom: 68px;
-        font-size: 64px;
+        
     }
 }
 
@@ -200,13 +202,13 @@
     }
 }
 
-.contacts-form { 
+#contacts-form { 
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 50px;
     padding-bottom: 40px;
     width: 290px;
-    box-shadow: 0 28px 40px #c2dbeb;
+    box-shadow: 0 8px 40px #c2dbeb;
     background-color: #ffffff;
 
     @media (min-width: 768px) { 
@@ -214,7 +216,7 @@
         padding-right: 25px;
         padding-top: 65px;
         width: 340px;
-        box-shadow: 0 28px 80px #c2dbeb;
+        box-shadow: 0 11px 80px #c2dbeb;
     }
 
     @media (min-width: 1200px) { 
@@ -223,7 +225,7 @@
         padding-top: 80px;
         padding-bottom: 40px;   
         width: 510px;
-        box-shadow: 0 28px 100px #c2dbeb;
+        box-shadow: 0 18px 100px #c2dbeb;
     }
 }
 
@@ -368,6 +370,11 @@
     }
 }
 
+.error {
+    font-size: 14px;    
+    color: rgb(252, 25, 25);
+}
+
 .contacts-page {   
     padding-top: 20px; 
     background-color: rgba(112, 175, 246, 0.1);
@@ -379,4 +386,9 @@
     @media (min-width: 1200px) { 
         padding-top: 60px;
     }
+}
+
+.contact-form__success {   
+    color: green;
+    text-align: center;
 }

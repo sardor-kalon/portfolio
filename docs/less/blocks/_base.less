@@ -30,7 +30,17 @@ body {
   position: fixed;
 }}
 
+#backTop a {  
+  color: #fbdc4d;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 40px;
+}
 
+#backTop a:hover {  
+  opacity: .5;
+}
 
 .primer.active { 
   overflow-y: hidden;
@@ -208,6 +218,7 @@ a , button {
   justify-content: center;
   margin-top: 15px;
   margin-bottom: 8px;
+  transition: ease .4s;
 
   @media (min-width: 768px) { 
     margin-top: 15px;
@@ -222,6 +233,7 @@ a , button {
 
 .intouch-icons { 
   margin-right: 32px;
+  transition: ease .4s;
 
   @media (min-width: 768px) { 
     margin-right: 34px;
@@ -245,8 +257,9 @@ a , button {
  color:black;
 
  &:hover {  
-   transform: scale(1.2);
+   transform: scale(1.1);
    color:rgb(43, 42, 42);
+   transition: ease .4s;
  }
 }
 
@@ -255,8 +268,9 @@ a , button {
   
   
   &:hover { 
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #23aff5;
+    transition: ease .4s;
   }
 }
 
@@ -264,8 +278,9 @@ a , button {
   color: #2962ff; 
   
   &:hover { 
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #396bf5;
+    transition: ease .4s;
   }
 }
 
@@ -273,8 +288,9 @@ a , button {
   color: #3b5998;  
 
   &:hover { 
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #1a9cdd;
+    transition: ease .4s;
   }
 }
 
@@ -321,3 +337,29 @@ a , button {
     bottom: 15%;
     left: 0;
   }
+
+.section-title {
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 39px;
+    line-height: 1.2;
+  
+    @media (min-width: 544px) {
+    }
+  
+    @media (min-width: 768px) {
+      margin-bottom: 45px;
+      font-size: 52px;
+      font-weight: 700;
+    }
+  
+    @media (min-width: 992px) {
+    }
+  
+    @media (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 59px;
+      font-weight: 900;
+    }
+  }
+  

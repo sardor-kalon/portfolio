@@ -45,7 +45,7 @@
 							</div>
 				
 							<nav class="toggle-menu-list">
-								<a href="#header">Главная</a>
+								<a href="index.html">Главная</a>
 								<a href="portfolio.html">Работы</a>
 								<a href="contacts.html">Контакты</a>
 							</nav>
@@ -72,11 +72,11 @@
 			
 					<div class="container">
 			
-						<h2 class="contacts-title"><span class="bottom-line">Контакты</span>
+						<h2 class="section-title contact"><span class="bottom-line">Контакты</span>
 						</h2>
 			
 						<div class="contacts-wrapper">
-			
+
 							<div class="contacts-content">
 								<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом —  напишите мне.
 								</p>
@@ -99,7 +99,10 @@
 			
 							</div>
 			
-							<form class="contacts-form">
+							<form id="contacts-form">
+								<input type="hidden" name="project_name" value="kalons.info">
+								<input type="hidden" name="admin_email" value="uzsmm1@gmail.com">
+								<input type="hidden" name="email_from" value="info@kalons.info">
 								<div class="contacts-form__item">
 									<input class="form-field" type="text" name="email">
 									<span class="fake-placeholder">Ваш Email</span>
@@ -119,6 +122,7 @@
 								</div>
 			
 							</form>
+							<div id="answer"></div>
 			
 						</div>
 			
@@ -130,7 +134,7 @@
 			<div class="container">
 				<div class="content">
 				<h4>© 2020 — Сардор Калонхожаев</h4>
-				<span>Веб-разработик из Ташкента, занимаюсь версткой и созданием сайтов.
+				<span>Веб-разработчик из Ташкента, занимаюсь версткой и созданием сайтов.
 				</span>
 				<span>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от  <a href="https://webcademy.ru/" target="blank">WebCademy.ru</a></span>
 			</div>
@@ -146,6 +150,7 @@
 
    <script src="./libs/jquery/jquery-3.5.0.min.js"></script>
    <script src="./libs/mixitup/mixitup.min.js"></script>
+   <script src="./libs/validate/jquery.validate.js"></script>
    <script src="./js/main.js"></script> 
 </body>
 </html>
