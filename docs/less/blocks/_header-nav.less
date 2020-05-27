@@ -49,11 +49,16 @@
     font-weight: 800;
     z-index: 1;
     max-width: 70px;
-    transition: .3s;
+    transition: ease .3s;
     
     a { 
       text-decoration: none;
       color: black;
+
+      &:hover {
+        transition: ease .3s;
+        color: rgb(61, 61, 61);
+      }
     }
   
     a::after {
@@ -61,18 +66,17 @@
       display: block;
       position: absolute;
       z-index: -1;
-       border-bottom: 10px solid #fbdc4d;
+      border-bottom: 10px solid #fbdc4d;
       bottom: 7px;
       left: -5px;
       right: -5px;
       max-width: 75px;
       
-     }
-
-     &:hover {
-         transform: scale(1.05);
-         transition: .3s;
-     }
+      &:hover {
+        transition: ease .3s;
+        color: #fad532;
+      }
+    }
 }
 
 .header-menu {
@@ -110,7 +114,7 @@
     content: "";
     position: absolute;
     bottom: 5px;
-    left: 0;
+    left: -3px;
     width: 0;
     height: 5px;
     background-color: #fbdc4d;
@@ -119,7 +123,8 @@
 }
 
   &:hover::after {
-      width: 100%;
+      width: 106%;
+      transition: ease 0.5s;
   }
 
   &:focus {   
@@ -162,7 +167,7 @@
   color: #2962ff; 
   
   &:hover { 
-    color: #396bf5;
+    color: #4e99fa;
   }
 }
   

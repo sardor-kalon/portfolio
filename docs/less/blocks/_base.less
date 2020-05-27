@@ -227,7 +227,7 @@ a , button {
 
   @media (min-width: 1200px) {
     margin-top: 0; 
-    margin-bottom: 35px;
+    margin-bottom: 23px;
   }
 }
 
@@ -275,11 +275,12 @@ a , button {
 }
 
 .intouch-icons .fa-skype { 
-  color: #2962ff; 
+  color: #2962ff;
+  transition: ease .4s; 
   
   &:hover { 
     transform: scale(1.1);
-    color: #396bf5;
+    color: #90aaf1;
     transition: ease .4s;
   }
 }
@@ -305,14 +306,13 @@ a , button {
 
       &:hover { 
           color: #039be5;
-          border-bottom: solid 2px #039be5;
+          border-bottom: 1px solid #039be5;
           transition: ease 0.3s;
-          font-weight: 600;
         }
     
       &:active {  
           color: #ea736d;
-          border-bottom: solid 2px #ea736d;
+          border-bottom: 1px solid #ea736d;
           transition: ease 0.3s;
         }
   }
@@ -362,4 +362,15 @@ a , button {
       font-weight: 900;
     }
   }
+
+.section-title.projects {  
+
+  @media (min-width: 768px) {
+    margin-bottom: 132px;
+  }
+  
+  @media (min-width: 1200px) {  
+    margin-bottom: 145px;
+  }
+}
   
