@@ -1,7 +1,7 @@
 
 #timeline {	
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 75px;
     padding-left: 0;
     padding-right: 0;
 
@@ -89,7 +89,7 @@
 }
 
 .timeline-block { 
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 	padding-bottom: 51px;
 	position: relative;
 	display: flex;
@@ -187,19 +187,19 @@
 }
 
 .timeline-block:first-child::after {
-    content: "";
-    position: absolute;
-
-    width: 4px;
-    height: 57px;
-
-    left: 35px;
-    top: -77px;
-    background-color: #e1eef4;
+    
 
     @media (min-width: 768px) { 
+        content: "";
+        position: absolute;
+
+        width: 4px;
+        height: 57px;
+
         right: 35px;
         left: unset;
+        top: -77px;
+        background-color: #e1eef4;
     }
 
     @media (min-width: 1200px) { 
@@ -226,7 +226,7 @@
 	cursor: pointer;
 	font-size: 20px;
     font-weight: 400;
-    padding-top: 15px;
+    padding-top: 0;
 	padding-left: 25px;
 	padding-right: 0;
     text-align: start;

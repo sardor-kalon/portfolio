@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 100%;
   outline: none;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body .primer {
   position: fixed;
@@ -94,7 +94,6 @@ button {
   }
 }
 .title-big {
-  font-family: "M PLUS 1p", sans-serif;
   font-weight: 800;
   font-size: 38px;
 }
@@ -198,7 +197,7 @@ button {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15px;
+  margin-top: 22px;
   margin-bottom: 8px;
   -webkit-transition: ease .4s;
   -o-transition: ease .4s;
@@ -345,13 +344,18 @@ button {
   padding-right: -5px;
   z-index: -1;
   width: 100%;
-  border-bottom: 12px solid yellow;
+  border-bottom: 7px solid yellow;
   bottom: 15%;
   left: 0;
 }
+@media (min-width: 768px) {
+  .bottom-line:after {
+    border-bottom: 12px solid yellow;
+  }
+}
 .section-title {
-  font-size: 42px;
-  font-weight: 900;
+  font-size: 37px;
+  font-weight: 800;
   margin-bottom: 39px;
   line-height: 1.2;
 }
@@ -359,15 +363,18 @@ button {
   .section-title {
     margin-bottom: 45px;
     font-size: 52px;
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 @media (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
     font-size: 59px;
-    font-weight: 900;
+    font-weight: 800;
   }
+}
+.section-title.projects {
+  margin-bottom: 48px;
 }
 @media (min-width: 768px) {
   .section-title.projects {
@@ -379,14 +386,19 @@ button {
     margin-bottom: 145px;
   }
 }
+.contacts-page {
+  background-color: rgba(112, 175, 246, 0.1);
+}
+.contacts.page {
+  background-color: transparent;
+}
 #header {
   margin: auto;
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 85px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   width: 100%;
   height: 100%;
-  font-family: "M PLUS 1p", sans-serif;
   overflow: hidden;
   max-width: 320px;
 }
@@ -435,7 +447,7 @@ button {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 75px;
+  margin-top: 25px;
   position: relative;
   z-index: 2;
 }
@@ -479,7 +491,7 @@ button {
   overflow: hidden;
   -o-object-position: center;
      object-position: center;
-  margin-bottom: 37px;
+  margin-bottom: 57px;
 }
 @media (min-width: 768px) {
   .my-photo {
@@ -624,7 +636,7 @@ button {
 }
 #header-bottom__wrapper {
   margin-bottom: 75px;
-  padding-top: 20px;
+  padding-top: 78px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -671,7 +683,7 @@ button {
   }
 }
 .skills-content {
-  margin-bottom: 13px;
+  margin-bottom: 30px;
 }
 @media (min-width: 544px) {
   .skills-content {
@@ -690,13 +702,13 @@ button {
   }
 }
 .skills-list {
-  margin-top: 20px;
+  margin-top: 23px;
   list-style-type: none;
   padding: 0;
   font-size: 18px;
   font-weight: 400;
   max-width: 270px;
-  line-height: 1.9;
+  line-height: 1.7;
 }
 @media (min-width: 544px) {
   .skills-list {
@@ -706,7 +718,6 @@ button {
 @media (min-width: 768px) {
   .skills-list {
     margin-top: 20px;
-    line-height: 1.7;
   }
 }
 @media (min-width: 1200px) {
@@ -714,12 +725,6 @@ button {
     margin-bottom: 43px;
     font-size: 23px;
     max-width: 630px;
-    line-height: 1.6;
-  }
-}
-@media (min-width: 1200px) {
-  .skills-list li::before {
-    content: "\2014";
   }
 }
 .intouch-wrapper {
@@ -783,8 +788,8 @@ button {
   width: 100%;
   max-width: 320px;
   height: 60px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 @media (min-width: 544px) {
   .header-nav {
@@ -1242,8 +1247,8 @@ button {
 }
 .portfolio {
   background-color: #f4f8f9;
-  padding-top: 47px;
-  padding-bottom: 70px;
+  padding-top: 60px;
+  padding-bottom: 95px;
 }
 @media (min-width: 768px) {
   .portfolio {
@@ -1332,7 +1337,6 @@ button {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 23px;
 }
 @media (min-width: 544px) {
   #portfolio-projects {
@@ -1345,7 +1349,6 @@ button {
 }
 @media (min-width: 768px) {
   #portfolio-projects {
-    margin-bottom: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -1365,11 +1368,6 @@ button {
        -moz-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-@media (min-width: 1200px) {
-  #portfolio-projects {
-    margin-bottom: 0;
   }
 }
 .portfolio-projects__item {
@@ -1494,7 +1492,7 @@ button {
   outline: hidden;
 }
 .portfolio-cards__desc {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 @media (min-width: 768px) {
   .portfolio-cards__desc {
@@ -1553,9 +1551,11 @@ button {
 .portfolio-cards__subtitle {
   font-size: 16px;
   font-weight: 400;
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
   .portfolio-cards__subtitle {
+    margin-top: 0;
     font-size: 20px;
     font-weight: 400;
   }
@@ -1565,9 +1565,6 @@ button {
     font-size: 22px;
     font-weight: 400;
   }
-}
-.show-cards {
-  margin-top: -30px;
 }
 @media (min-width: 768px) {
   .show-cards {
@@ -1596,7 +1593,7 @@ button {
 }
 #timeline {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -1736,7 +1733,7 @@ button {
   }
 }
 .timeline-block {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   padding-bottom: 51px;
   position: relative;
   display: -webkit-box;
@@ -1842,19 +1839,16 @@ button {
     left: 35px;
   }
 }
-.timeline-block:first-child::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 57px;
-  left: 35px;
-  top: -77px;
-  background-color: #e1eef4;
-}
 @media (min-width: 768px) {
   .timeline-block:first-child::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 57px;
     right: 35px;
     left: unset;
+    top: -77px;
+    background-color: #e1eef4;
   }
 }
 .timeline-img {
@@ -1892,7 +1886,7 @@ button {
   cursor: pointer;
   font-size: 20px;
   font-weight: 400;
-  padding-top: 15px;
+  padding-top: 0;
   padding-left: 25px;
   padding-right: 0;
   text-align: start;
@@ -1967,7 +1961,7 @@ button {
 .contacts {
   position: relative;
   z-index: 1;
-  padding-top: 48px;
+  padding-top: 55px;
   background-color: rgba(112, 175, 246, 0.1);
 }
 @media (min-width: 768px) {
@@ -1998,7 +1992,7 @@ button {
   }
 }
 .section-title.contact {
-  margin-bottom: 39px;
+  margin-bottom: 45px;
   color: #000;
   text-align: center;
 }
@@ -2030,7 +2024,7 @@ button {
      -moz-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 101px;
+  padding-bottom: 70px;
 }
 @media (min-width: 544px) {
   .contacts-wrapper {
@@ -2077,8 +2071,8 @@ button {
   }
 }
 .contacts-content p {
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   color: #000;
@@ -2114,7 +2108,7 @@ button {
   }
 }
 .list-item {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2151,12 +2145,14 @@ button {
 }
 .list-item span {
   margin-right: 30px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 700;
 }
 @media (min-width: 768px) {
   .list-item span {
     margin-right: 30px;
+    margin-bottom: 0;
     font-size: 18px;
   }
 }
@@ -2632,7 +2628,7 @@ footer {
 @media (min-width: 768px) {
   .for-contact-me {
     margin-bottom: 25px;
-    width: 470px;
+    width: 500px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -2650,6 +2646,7 @@ footer {
 @media (min-width: 1200px) {
   .for-contact-me {
     margin-bottom: 35px;
+    width: 510px;
   }
 }
 .contact-mail {
@@ -2663,13 +2660,12 @@ footer {
   border-bottom: solid 2px #1a8fc9;
 }
 .contact-mail:hover {
-  color: #039be5;
-  border-bottom: solid 2px #039be5;
+  color: #57c0f5;
+  border-bottom: solid 2px #57c0f5;
   -webkit-transition: ease 0.3s;
   -o-transition: ease 0.3s;
   -moz-transition: ease 0.3s;
   transition: ease 0.3s;
-  font-weight: 600;
 }
 .contact-mail:active {
   color: #ea736d;

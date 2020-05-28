@@ -24,7 +24,7 @@ body {
   width: 100%;
   height: 100%;
   outline: none;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   
 .primer { 
   position: fixed;
@@ -98,7 +98,6 @@ a , button {
 }
 
 .title-big {
-  font-family: "M PLUS 1p", sans-serif;
   font-weight: 800;
   font-size: 38px;
   
@@ -216,7 +215,7 @@ a , button {
 .icons-row {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 22px;
   margin-bottom: 8px;
   transition: ease .4s;
 
@@ -333,14 +332,18 @@ a , button {
     padding-right: -5px;
     z-index: -1;
     width: 100%;
-    border-bottom: 12px solid yellow;
+    border-bottom: 7px solid yellow;
     bottom: 15%;
     left: 0;
+
+    @media (min-width: 768px) {
+      border-bottom: 12px solid yellow;
+    }
   }
 
 .section-title {
-    font-size: 42px;
-    font-weight: 900;
+    font-size: 37px;
+    font-weight: 800;
     margin-bottom: 39px;
     line-height: 1.2;
   
@@ -350,7 +353,7 @@ a , button {
     @media (min-width: 768px) {
       margin-bottom: 45px;
       font-size: 52px;
-      font-weight: 700;
+      font-weight: 800;
     }
   
     @media (min-width: 992px) {
@@ -359,11 +362,12 @@ a , button {
     @media (min-width: 1200px) {
       margin-bottom: 50px;
       font-size: 59px;
-      font-weight: 900;
+      font-weight: 800;
     }
   }
 
 .section-title.projects {  
+  margin-bottom: 48px;
 
   @media (min-width: 768px) {
     margin-bottom: 132px;
@@ -372,5 +376,13 @@ a , button {
   @media (min-width: 1200px) {  
     margin-bottom: 145px;
   }
+}
+
+.contacts-page {  
+  background-color: rgba(112, 175, 246, 0.1)
+}
+
+.contacts.page {  
+  background-color: transparent;
 }
   
