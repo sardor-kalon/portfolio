@@ -227,7 +227,12 @@
       justify-content: space-between;
     }
 
-    @media (min-width: 1200px) { 
+    @media (min-width: 992px) { 
+      justify-content: start;
+    }
+
+    @media (min-width: 1200px) {
+      justify-content: space-between; 
       margin-bottom: 12px;
       margin-top: -40px;
       padding-top: 40px;
@@ -245,6 +250,11 @@
     margin-bottom: 0; 
     width: 50%;
   }
+
+  @media (min-width: 768px) { 
+    max-width: 400px;
+  }
+
   @media (min-width: 1200px) {
     max-width: 630px; 
        

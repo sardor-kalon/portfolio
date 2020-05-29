@@ -41,6 +41,39 @@ body .primer {
   overflow-y: hidden;
   position: absolute;
 }
+#page-nav {
+  position: fixed;
+  right: 5px;
+  top: 50%;
+  z-index: 100;
+  list-style-type: none;
+}
+@media (min-width: 992px) {
+  #page-nav {
+    right: 50px;
+  }
+}
+#page-nav li {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid green;
+  margin-bottom: 15px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  -moz-transition: .5s;
+  transition: .5s;
+}
+#page-nav li a {
+  display: block;
+  height: 100%;
+}
+#page-nav li.active {
+  background-color: green;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -675,8 +708,22 @@ button {
             justify-content: space-between;
   }
 }
+@media (min-width: 992px) {
+  #header-bottom__wrapper {
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+       -moz-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 @media (min-width: 1200px) {
   #header-bottom__wrapper {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 12px;
     margin-top: -40px;
     padding-top: 40px;
@@ -694,6 +741,11 @@ button {
   .skills-content {
     margin-bottom: 0;
     width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .skills-content {
+    max-width: 400px;
   }
 }
 @media (min-width: 1200px) {
