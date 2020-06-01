@@ -28,7 +28,7 @@
         display: block;
         z-index: -1;
         top: 290px;
-        left: -97px;
+        
     }
 }
 
@@ -395,19 +395,48 @@
 }
 
 .contacts-page {   
-    padding-top: 20px; 
+    position: relative;
+    z-index: 1;
+    padding-top: 15px;
     background-color: rgba(112, 175, 246, 0.1);
+   
 
-    @media (min-width: 1200px) { 
-        padding-top: 40px;
+    @media (min-width: 768px) { 
+        padding-top: 30px;
+        
     }
 
     @media (min-width: 1200px) { 
-        padding-top: 60px;
+        padding-top: 70px;
+        
+        background-image: url(../img/lines/3.jpg);
+        background-repeat: repeat;
+        background-size: auto;
+        background-position: center;
     }
 }
 
 .contact-form__success {   
     color: green;
     text-align: center;
+}
+
+.header-nav.contact {   
+    margin-bottom: 80px;
+}
+
+.contacts-section { 
+    width: 300px;
+    
+    @media (min-width: 768px) { 
+        width: 290px;
+        margin-right: 80px;
+    }
+
+    @media (min-width: 1200px) { 
+        width: 505px;
+        padding-top: 20px;
+        padding-bottom: 150px;
+        margin-right: 100px;
+    }
 }
