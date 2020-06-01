@@ -2508,21 +2508,24 @@ button {
 .header-nav.contact {
   margin-bottom: 80px;
 }
+@media (min-width: 1200px) {
+  .header-nav.contact {
+    margin-bottom: 150px;
+  }
+}
 .contacts-section {
   width: 300px;
 }
 @media (min-width: 768px) {
   .contacts-section {
-    width: 290px;
     margin-right: 80px;
   }
 }
 @media (min-width: 1200px) {
   .contacts-section {
-    width: 505px;
     padding-top: 20px;
     padding-bottom: 150px;
-    margin-right: 100px;
+    width: 100%;
   }
 }
 footer {
