@@ -282,7 +282,24 @@
         margin-bottom: 43px;
         font-size: 23px;
         max-width: 630px;
+
+        
     }
+}
+
+.skills-list li { 
+  margin-bottom: 10px;
+  &:last-child {  
+    margin-bottom: 0;
+  }
+
+   @media (min-width: 1200px) {  
+    &:before {  
+      content: "\2014";
+    
+    }
+  }
+
 }
 
 .button-jobs {
